@@ -1,6 +1,15 @@
-# Standards
+## Standards
 
 These standards are extensions of [PSR-2](https://www.php-fig.org/psr/psr-2).
+
+## TL;DR
+
+- [Arrays](#arrays)
+- [Comments](#comments)
+- [Strings](#strings)
+- [Variables](#variables)
+
+<a name="arrays"></a>
 
 ### Arrays
 
@@ -40,6 +49,14 @@ $words = $words = [
 ];
 ```
 
+<a name="comments"></a>
+
+### Comments
+
+- TODO
+
+<a name="strings"></a>
+
 ### Strings
 
 - Only use double quotes `"` for a string that contains variables.
@@ -52,6 +69,8 @@ $message = "This string does not contain varirables.";
 $message = 'This string does not contain variables.';
 $message = "Hello, {$name}";
 ```
+
+<a name="variables"></a>
 
 ### Variables
 
