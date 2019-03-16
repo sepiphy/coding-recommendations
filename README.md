@@ -1,6 +1,6 @@
 ## About
 
-XuanQuynh coding recommandations for various languages.
+XuanQuynh coding recommendations for various languages and frameworks.
 
 ## Standards
 
