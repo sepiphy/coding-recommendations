@@ -53,7 +53,40 @@ $words = $words = [
 
 ### Comments
 
-- TODO
+- Use these formats for a function or method comments.
+  - `@param  <datatype>  $varname`.
+  - `@return <datatype>`
+  - `@throws <Exception>`
+
+- Use short name for all classes, interfaces and traits.
+
+```php
+
+namespace Example;
+
+use Dir\To\ExClass;
+use Dir\To\ExException;
+
+class Example
+{
+    /**
+     * Do something with the object.
+     *
+     * Do not use "@param  \Dir\To\ExClass  $third" and "@throws \Dir\To\ExException"
+     *
+     * @param  int  $first
+     * @param  string  $second
+     * @param  ExClass  $third
+     * @return void
+     *
+     * @throws ExException
+     */
+    public function someMethod($first, $second, ExClass $third)
+    {
+        //
+    }
+}
+```
 
 <a name="strings"></a>
 
