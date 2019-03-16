@@ -1,8 +1,8 @@
-## Standards
+## PHP Coding Recommendations
 
 These standards are extensions of [PSR-2](https://www.php-fig.org/psr/psr-2).
 
-## TL;DR
+### TL;DR
 
 - [Arrays](#arrays)
 - [Comments](#comments)
@@ -54,11 +54,10 @@ $words = $words = [
 ### Comments
 
 - Use these formats for a function or method comments.
-  - `@param  <datatype>  $varname`.
+  - `@param <datatype> $varname`.
   - `@return <datatype>`
   - `@throws <Exception>`
-
-- Use short name for all classes, interfaces and traits.
+- Use the short names for all classes, interfaces and traits.
 
 ```php
 
@@ -72,11 +71,9 @@ class Example
     /**
      * Do something with the object.
      *
-     * Do not use "@param  \Dir\To\ExClass  $third" and "@throws \Dir\To\ExException"
-     *
-     * @param  int  $first
-     * @param  string  $second
-     * @param  ExClass  $third
+     * @param int $first
+     * @param string $second
+     * @param ExClass $third
      * @return void
      *
      * @throws ExException
@@ -92,7 +89,7 @@ class Example
 
 ### Strings
 
-- Only use double quotes `"` for a string that contains variables.
+- Only use double quote `"` for a string that contains variables.
 
 ```php
 // Bad
