@@ -57,7 +57,8 @@ $words = $words = [
   - `@param <datatype> $varname`.
   - `@return <datatype>`
   - `@throws <Exception>`
-- Use the short names for all classes, interfaces and traits.
+
+> Note: Use the short names for all classes, interfaces and traits.
 
 ```php
 

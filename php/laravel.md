@@ -12,7 +12,8 @@
   - `@param  <datatype>  $varname`.
   - `@return <datatype>`
   - `@throws <Exception>`
-- Use the full names for all classes, interfaces and traits.
+
+> Note: Use the full names for all classes, interfaces and traits.
 
 ```php
 
