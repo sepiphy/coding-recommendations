@@ -1,6 +1,6 @@
 ## PHP Coding Recommendations
 
-These standards are extensions of [PSR-2](https://www.php-fig.org/psr/psr-2).
+These recommendations are extensions of [PSR-2](https://www.php-fig.org/psr/psr-2).
 
 ### TL;DR
 

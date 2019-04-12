@@ -2,19 +2,24 @@
 
 XuanQuynh coding recommendations for various languages and frameworks.
 
-## Standards
+## Recommendations
 
-- [PHP](./php/origin.md)
-  - [Laravel](./php/laravel.md)
+### Languages
+
+- [PHP](./languages/php.md)
+
+### Frameworks
+
+- [Laravel](./frameworks/laravel.md)
 
 ## Contributing
 
-- Thank you for considering contributing to `xuanquynh/coding-recommendations` repository!
+Thank you for considering contributing to `xuanquynh/coding-recommendations` package!
 
-- Feel free to submit an issue or a pull request for your expectation!
+Feel free to submit an issue or a pull request for your expectation!
 
-- All contributions are welcome and accepted via pull requests.
+All contributions are welcome and accepted via pull requests.
 
 ## License
 
-- The `xuanquynh/coding-recommendations` repository is licensed under the [MIT license](LICENSE.md).
+The `xuanquynh/coding-recommendations` package is licensed under the [MIT license](LICENSE.md).
