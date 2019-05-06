@@ -1,6 +1,6 @@
 ## About
 
-XuanQuynh coding recommendations for various languages and frameworks.
+Coding recommendations for various languages and frameworks.
 
 ## Recommendations
 
@@ -14,12 +14,8 @@ XuanQuynh coding recommendations for various languages and frameworks.
 
 ## Contributing
 
-Thank you for considering contributing to `xuanquynh/coding-recommendations` package!
-
-Feel free to submit an issue or a pull request for your expectation!
-
-All contributions are welcome and accepted via pull requests.
+Please read the [contribution guide](https://seriquynh.com/oss?project=xuanquynh/coding-recommendations) for more information.
 
 ## License
 
-The `xuanquynh/coding-recommendations` package is licensed under the [MIT license](LICENSE.md).
+This project is open-sourced software licensed under the [MIT license](LICENSE.md).
