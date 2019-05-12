@@ -1,5 +1,3 @@
-## Laravel Coding Recommendations
-
 These recommendations are extensions of [php](../languages/php.md).
 
 ### TL;DR

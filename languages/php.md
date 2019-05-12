@@ -1,6 +1,4 @@
-## PHP Coding Recommendations
-
-These recommendations are extensions of [PSR-2](https://www.php-fig.org/psr/psr-2).
+These recommendations are extensions of [Symfony Standards](https://symfony.com/doc/current/contributing/code/standards.html) and [Symfony Coventions](https://symfony.com/doc/current/contributing/code/conventions.html).
 
 ### TL;DR
 

@@ -1,14 +1,14 @@
+![GitHub](https://img.shields.io/github/license/xuanquynh/coding-recommendations.svg)
+
 Coding recommendations for various languages and frameworks.
 
 ## Recommendations
 
-### Languages
-
+Languages:
 - [PHP](./languages/php.md)
 - [JavaScript](./languages/javascript.md)
 
-### Frameworks
-
+Frameworks:
 - [Laravel](./frameworks/laravel.md)
 
 ## Contributing
