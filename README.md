@@ -13,7 +13,7 @@ Frameworks:
 
 ## Contributing
 
-Please read the [contribution guide](https://seriquynh.com/oss?project=xuanquynh/coding-recommendations) for more information.
+Please read the [contribution guide](https://seriquynh.com/oss/contributing?github=xuanquynh/coding-recommendations) for more information.
 
 ## License
 
