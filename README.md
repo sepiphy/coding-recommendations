@@ -1,5 +1,3 @@
-## About
-
 Coding recommendations for various languages and frameworks.
 
 ## Recommendations
@@ -7,6 +5,7 @@ Coding recommendations for various languages and frameworks.
 ### Languages
 
 - [PHP](./languages/php.md)
+- [JavaScript](./languages/javascript.md)
 
 ### Frameworks
 
@@ -18,4 +17,4 @@ Please read the [contribution guide](https://seriquynh.com/oss?project=xuanquynh
 
 ## License
 
-This project is open-sourced software licensed under the [MIT license](LICENSE.md).
+Please read the [MIT license](LICENSE.md) for more information.
