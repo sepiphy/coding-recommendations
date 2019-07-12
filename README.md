@@ -5,8 +5,8 @@ Coding recommendations for various languages and frameworks.
 ## Recommendations
 
 Languages:
-- [PHP](./languages/php.md)
-- [JavaScript](./languages/javascript.md)
+- [PHP](./languages/php.md) - Using [PHPCS](https://packagist.org/packages/squizlabs/php_codesniffer) and [PHPCS Fixer](https://packagist.org/packages/friendsofphp/php-cs-fixer)
+- [JavaScript](./languages/javascript.md) - Using [ESlint](https://eslint.org/)
 
 Frameworks:
 - [Laravel](./frameworks/laravel.md)
