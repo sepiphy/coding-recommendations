@@ -1,4 +1,4 @@
-These recommendations are extensions of [php](../languages/php.md).
+These recommendations inherit [PHP rules](../languages/php.md).
 
 ### TL;DR
 
@@ -8,35 +8,37 @@ These recommendations are extensions of [php](../languages/php.md).
 
 ### Comments
 
-- Use these formats for a function or method comments.
+- Functions or methods docblock **MUST** be declared with these formats.
   - `@param  <datatype>  $varname`.
   - `@return <datatype>`
   - `@throws <Exception>`
 
-> Note: Use the full names for all classes, interfaces and traits.
+- Classes or interfaces as datatypes **MUST** be full names.
 
 ```php
 
 namespace Example;
 
-use Dir\To\ExClass;
-use Dir\To\ExException;
+use Vendor\Subname\SomeClass;
+use Vendor\Subname\SomeException;
 
 class Example
 {
     /**
      * Do something with the object.
      *
-     * @param  int  $first
-     * @param  string  $second
-     * @param  \Dir\To\ExClass  $third
+     * @param int $first
+     * @param string $second
+     * @param \Vendor\Subname\SomeClass $third
      * @return void
      *
-     * @throws \Dir\To\ExException
+     * @throws \Vendor\Subname\SomeException
      */
-    public function someMethod($first, $second, ExClass $third)
+    public function someMethod($first, $second, SomeClass $third)
     {
-        //
+        // Do some stuff.
+
+        throw new SomeException();
     }
 }
 ```

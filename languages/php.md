@@ -61,7 +61,7 @@ $words = [
 
 ### Comments
 
-- Function or method docblock **MUST** be declared with these formats.
+- Functions or methods docblock **MUST** be declared with these formats.
   - `@param <datatype> $varname`.
   - `@return <datatype>`
   - `@throws <Exception>`
@@ -92,7 +92,7 @@ class Example
     {
         // Do some stuff.
 
-        throw new SomeException
+        throw new SomeException();
     }
 }
 ```
