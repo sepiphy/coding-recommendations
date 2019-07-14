@@ -1,27 +1,38 @@
-These recommendations are extensions of [Symfony Standards](https://symfony.com/doc/current/contributing/code/standards.html) and [Symfony Coventions](https://symfony.com/doc/current/contributing/code/conventions.html).
+These recommendations inherit [PSR-1](https://www.php-fig.org/psr/psr-1) and [PSR-2](https://www.php-fig.org/psr/psr-2) with some extensions and modifitions.
 
-### TL;DR
+> +7.1.3
 
+## TL;DR
+
+- [Common](#common)
 - [Arrays](#arrays)
 - [Comments](#comments)
 - [Strings](#strings)
 - [Variables](#variables)
 
+## Common
+
+- Files **MUST** use only `<?php` the long tags.
+- Files **MUST** enable strict mode by default `<?php declare(strict_types=1);`.
+- Namespaces and classes **MUST** only follow the [PSR-4](https://www.php-fig.org/psr/psr-4) autoloading standard.
+- Constructors **MUST** be always called with parentheses.
+
 <a name="arrays"></a>
 
 ### Arrays
 
-- Use `[]` instead of `array()` for array definitions.
-- Use multiple lines for an very long array because of readable reason.
-- Use a trailing comma after the last item of a multiple-line array.
+- Arrays **MUST** be declared with `[]` instead of `array()`.
+- Very long arrays **MUST** be splitted into multiple lines.
+- Multi-line arrays **MUST** have a trailling comma after the last item.
 
 ```php
 // Bad
 $numbers = array(1, 2, 3);
 
-$sentences = ['This is the first sentence.', 'This is the second sentence.', 'This is the third sentence.'];
+$items = ['This is the first item.', 'This is the second item.', 'This is the third item.'];
 
-$words = ['one', 'two', 'three',];
+$words = ['one', 'two', 'three',]; // no trailling comma for the one-line arrays.
+
 $words = [
     'one',
     'two',
@@ -33,14 +44,15 @@ $words = [
 // Good
 $numbers = [1, 2, 3];
 
-$sentences = [
-    'This is the first sentence.',
-    'This is the second sentence.',
-    'This is the third sentence.',
+$items = [
+    'This is the first item.',
+    'This is the second item.',
+    'This is the third item.',
 ];
 
 $words = ['one', 'two', 'three'];
-$words = $words = [
+
+$words = [
     'one',
     'two',
     'three',
@@ -51,19 +63,19 @@ $words = $words = [
 
 ### Comments
 
-- Use these formats for a function or method comments.
+- Function or method docblock **MUST** be declared with these formats.
   - `@param <datatype> $varname`.
   - `@return <datatype>`
   - `@throws <Exception>`
 
-> Note: Use the short names for all classes, interfaces and traits.
+- Classes or interfaces as datatypes **MUST** be short names.
 
 ```php
 
 namespace Example;
 
-use Dir\To\ExClass;
-use Dir\To\ExException;
+use Vendor\Subname\SomeClass;
+use Vendor\Subname\SomeException;
 
 class Example
 {
@@ -72,14 +84,17 @@ class Example
      *
      * @param int $first
      * @param string $second
-     * @param ExClass $third
+     * @param SomeClass $third
+
      * @return void
      *
-     * @throws ExException
+     * @throws SomeException
      */
-    public function someMethod($first, $second, ExClass $third)
+    public function someMethod($first, $second, SomeClass $third)
     {
-        //
+        // Do some stuff.
+
+        throw new SomeException
     }
 }
 ```
@@ -88,7 +103,7 @@ class Example
 
 ### Strings
 
-- Only use double quote `"` for a string that contains variables.
+- Double quotes `"` **MUST** be only used for strings containing variables.
 
 ```php
 // Bad
@@ -103,15 +118,15 @@ $message = "Hello, {$name}";
 
 ### Variables
 
-- Do not declare a variable starts with `_` character.
-- Do not use `snakeCase` syntax to declare a variable. Use `camelCase` syntax instead.
+- Variable names **MUST NOT** contain underscore character (`_`).
+- Variable names **MUST** be `camelCase` style, not `snake_case`.
 
 ```php
 // Bad
-$_surname = 'Nguyen';
 $first_name = 'Quynh';
+$_surname = 'Nguyen';
 
 // Good
-$surname = 'Nguyen';
 $firstName = 'Quynh';
+$surname = 'Nguyen';
 ```
