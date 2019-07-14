@@ -1,3 +1,4 @@
+![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/xuanquynh/coding-recommendations.svg?label=version)
 ![GitHub](https://img.shields.io/github/license/xuanquynh/coding-recommendations.svg)
 
 Coding recommendations for various languages and frameworks.
