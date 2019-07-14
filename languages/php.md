@@ -102,14 +102,17 @@ class Example
 ### Strings
 
 - Double quotes `"` **MUST** be only used for strings containing variables.
+- String concatenation statements **MUST NOT** contain white spaces.
 
 ```php
 // Bad
 $message = "This string does not contain varirables.";
+$message = 'Hello, ' . $name . '. Welcome to PHP world.';
 
 // Good
 $message = 'This string does not contain variables.';
 $message = "Hello, {$name}";
+$message = 'Hello, '.$name.'. Welcome to PHP world.';
 ```
 
 <a name="variables"></a>
