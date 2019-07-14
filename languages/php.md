@@ -1,6 +1,4 @@
-These recommendations inherit [PSR-1](https://www.php-fig.org/psr/psr-1) and [PSR-2](https://www.php-fig.org/psr/psr-2) with some extensions and modifitions.
-
-> +7.1.3
+These recommendations inherit [PSR-1](https://www.php-fig.org/psr/psr-1) and [PSR-2](https://www.php-fig.org/psr/psr-2).
 
 ## TL;DR
 
