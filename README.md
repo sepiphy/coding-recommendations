@@ -6,6 +6,7 @@ Coding recommendations for various languages and frameworks.
 ### Languages
 - [PHP](./languages/php.md) - Using [PHPCS](https://packagist.org/packages/squizlabs/php_codesniffer) and [PHPCS Fixer](https://packagist.org/packages/friendsofphp/php-cs-fixer)
 - [JavaScript](./languages/javascript.md) - Using [ESlint](https://eslint.org/)
+- [Python](./languages/python.md)
 
 ### Frameworks
 - [Laravel](./frameworks/laravel.md)
