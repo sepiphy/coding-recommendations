@@ -5,6 +5,7 @@ These recommendations inherit [PSR-1](https://www.php-fig.org/psr/psr-1) and [PS
 - [Common](#common)
 - [Arrays](#arrays)
 - [Comments](#comments)
+- [Imports](#imports)
 - [Strings](#strings)
 - [Variables](#variables)
 
@@ -72,7 +73,7 @@ $words = [
 
 namespace Example;
 
-use Vendor\Subname\SomeClass;
+use Vendor\Subname\FooClass;
 use Vendor\Subname\SomeException;
 
 class Example
@@ -82,13 +83,13 @@ class Example
      *
      * @param int $first
      * @param string $second
-     * @param SomeClass $third
+     * @param FooClass $third
 
      * @return void
      *
      * @throws SomeException
      */
-    public function someMethod($first, $second, SomeClass $third)
+    public function someMethod($first, $second, FooClass $third)
     {
         // Do some stuff.
 
@@ -97,6 +98,34 @@ class Example
 }
 ```
 
+<a name="imports"></a>
+
+### Imports
+
+- Imports **MUST** be sorted in the following order: Native (PHP), Library (Third-party), Local (Project).
+- Imports of a group **MUST** be sorted by alpha-numeric.
+
+```php
+// Bad
+namespace Example;
+
+use Symfony\Component\Console\Command;
+use Exception;
+use Symfony\Component\Console\Application;
+use Exception\Another\FooClass;
+use SplFileInfo;
+use Exception\Another\BarClass;
+
+// Good
+namespace Example;
+
+use Exception;
+use SplFileInfo;
+use Symfony\Component\Console\Application;
+use Symfony\Component\Console\Command;
+use Exception\Another\BarClass;
+use Exception\Another\FooClass;
+```
 <a name="strings"></a>
 
 ### Strings
