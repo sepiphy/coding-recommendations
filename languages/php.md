@@ -8,6 +8,7 @@ These recommendations inherit [PSR-1](https://www.php-fig.org/psr/psr-1) and [PS
 - [Imports](#imports)
 - [Strings](#strings)
 - [Variables](#variables)
+- [Visibility](#visibility)
 
 ## Common
 
@@ -159,4 +160,56 @@ $_surname = 'Nguyen';
 // Good
 $firstName = 'Quynh';
 $surname = 'Nguyen';
+```
+
+<a name="visibility"></a>
+
+### Visibility
+
+- Class constants **SHOULD** be declared with `const` only, not use `public`, `protected` or `private`.
+- Non-public attributes and methods (including static candidates) **SHOULD** be declared with `protected` only, not `private`. Because it's easy to extend in the inheritance members. All modifications **SHOULD** be decided by software developers.
+- Constants, properties and methods **SHOULD** be declared in the following order:
+  - Constants (public, protected, private)
+  - Static properties (public, protected, private)
+  - Properties (public, protected, private)
+  - Static methods (public, protected, private)
+  - Magic methods (public, protected, private)
+  - Methods (public, protected, private)
+
+```php
+// Bad
+class Example
+{
+    public const LANGUAGE = 'PHP';
+    protected const VERSION = '7.1';
+    private const INTERPRETER = 'HHVM'
+
+    private static function foo()
+    {
+        //
+    }
+
+    private function bar()
+    {
+        //
+    }
+}
+
+// Good
+class Example
+{
+    const LANGUAGE = 'PHP';
+    const VERSION = '7.1';
+    const INTERPRETER = 'Zend';
+
+    protected static function foo()
+    {
+        //
+    }
+
+    private function bar()
+    {
+        //
+    }
+}
 ```
