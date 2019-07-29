@@ -103,7 +103,7 @@ class Example
 
 ### Imports
 
-- Imports **MUST** be sorted in the following order: Native (PHP), Library (Third-party), Local (Project).
+- Imports **SHOULD** be sorted in the following order: Native (PHP), Library (Third-party), Local (Project).
 - Imports of a group **MUST** be sorted by alpha-numeric.
 
 ```php
@@ -113,9 +113,9 @@ namespace Example;
 use Symfony\Component\Console\Command;
 use Exception;
 use Symfony\Component\Console\Application;
-use Exception\Another\FooClass;
+use Local\Another\FooClass;
 use SplFileInfo;
-use Exception\Another\BarClass;
+use Local\Another\BarClass;
 
 // Good
 namespace Example;
@@ -124,8 +124,8 @@ use Exception;
 use SplFileInfo;
 use Symfony\Component\Console\Application;
 use Symfony\Component\Console\Command;
-use Exception\Another\BarClass;
-use Exception\Another\FooClass;
+use Local\Another\BarClass;
+use Local\Another\FooClass;
 ```
 <a name="strings"></a>
 
